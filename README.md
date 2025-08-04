@@ -15,3 +15,7 @@ You do not need an API key for this public dataset.
 
 Execution of the train_test_monitor.py script will produce an EvidentlyAI report in HTML format, as well as store the model in MLFlow.
 The evidently report can be found in the same location as the python script; MLFlow can be accessed via the mlflow ui command.
+
+A dockerfile is also available for use.
+
+This project currently lacks proper structure due to lack of time in completion. The train_test_monitor.py will present most output (evidentlyAI report, MLFlow registry)
