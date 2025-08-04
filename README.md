@@ -1,6 +1,6 @@
 # 311_predictions
 
-This project is the model creation of a prediction model from the NYC 311 data to predict whether a complaint will be resolved within 7 days. 
+This project is the model creation of a prediction model from the NYC 311 data to predict whether a complaint will be resolved within 7 days. For this the chosen alorithm is XGBoost. 
 
 
 This is the capstone project for the Datatalks MLOps course. 
