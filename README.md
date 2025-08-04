@@ -1,2 +1,12 @@
 # 311_predictions
 model from NYC 311 data to predict whether a complaint will be resolved within 7 days
+
+
+This is the capstone project for the Datatalks MLOps course.
+
+We will be creating an end-to-end classification model using NYC 311 data to predict whether a complaint will be resolved within 7 days.
+
+MAIN URL with explanations, schema, etc: is found at: https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9/about_data
+
+# The API URL is: https://data.cityofnewyork.us/resource/erm2-nwe9.csv
+# You do not need an API key for this public dataset.
