@@ -2,6 +2,7 @@
 
 This project is the model creation of a prediction model from the NYC 311 data to predict whether a complaint will be resolved within 7 days. For this the chosen alorithm is XGBoost. 
 
+It highlights the usage of MLFlow for model storage as well as EvidentlyAI for monitorinfg. 
 
 This is the capstone project for the Datatalks MLOps course. 
 
