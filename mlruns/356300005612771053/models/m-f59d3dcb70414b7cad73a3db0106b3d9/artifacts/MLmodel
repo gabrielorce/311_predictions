@@ -1,0 +1,31 @@
+artifact_path: file:///C:/z2005/311_project/311_predictions/mlruns/356300005612771053/models/m-f59d3dcb70414b7cad73a3db0106b3d9/artifacts
+flavors:
+  python_function:
+    data: model.xgb
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.10.4
+  xgboost:
+    code: null
+    data: model.xgb
+    model_class: xgboost.sklearn.XGBRegressor
+    model_format: xgb
+    xgb_version: 3.0.2
+is_signature_from_type_hint: false
+mlflow_version: 3.1.1
+model_id: m-f59d3dcb70414b7cad73a3db0106b3d9
+model_size_bytes: 71923
+model_uuid: m-f59d3dcb70414b7cad73a3db0106b3d9
+prompts: null
+run_id: 2c13ad18e1d04b7f9abcadd38159dfb6
+signature:
+  inputs: '[{"type": "integer", "name": "complaint_type", "required": true}, {"type":
+    "integer", "name": "borough", "required": true}, {"type": "integer", "name": "agency",
+    "required": true}, {"type": "integer", "name": "incident_zip", "required": true},
+    {"type": "long", "name": "resolution_time", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-08-05 04:43:23.285911'

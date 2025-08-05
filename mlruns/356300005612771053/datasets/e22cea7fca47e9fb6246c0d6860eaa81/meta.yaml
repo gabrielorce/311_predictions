@@ -1,0 +1,9 @@
+digest: 7d1ccd14
+name: dataset
+profile: '{"features_shape": [7898, 5], "features_size": 39490, "features_nbytes":
+  157960}'
+schema: '{"mlflow_tensorspec": {"features": "[{\"type\": \"tensor\", \"tensor-spec\":
+  {\"dtype\": \"float32\", \"shape\": [-1, 5]}}]", "targets": null}}'
+source: '{"tags": {"mlflow.user": "Bjorn", "mlflow.source.name": "c:/z2005/311_project/311_predictions/train_test_monitor.py",
+  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "8843d3d0ebf187f05604336673d5811261783efa"}}'
+source_type: code

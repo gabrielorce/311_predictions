@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/z2005/311_project/311_predictions/mlruns/356300005612771053/a39dc0e9d41f4ac49869342efae8032b/artifacts
+end_time: 1754368693641
+entry_point_name: ''
+experiment_id: '356300005612771053'
+lifecycle_stage: active
+run_id: a39dc0e9d41f4ac49869342efae8032b
+run_name: sneaky-steed-822
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754368693564
+status: 4
+tags: []
+user_id: Bjorn

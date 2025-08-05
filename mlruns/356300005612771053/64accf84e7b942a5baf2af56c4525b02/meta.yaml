@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/z2005/311_project/311_predictions/mlruns/356300005612771053/64accf84e7b942a5baf2af56c4525b02/artifacts
+end_time: 1754369528808
+entry_point_name: ''
+experiment_id: '356300005612771053'
+lifecycle_stage: active
+run_id: 64accf84e7b942a5baf2af56c4525b02
+run_name: likeable-grub-526
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754369519573
+status: 3
+tags: []
+user_id: Bjorn

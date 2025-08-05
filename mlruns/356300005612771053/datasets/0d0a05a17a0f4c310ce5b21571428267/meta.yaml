@@ -1,0 +1,10 @@
+digest: 75e2db24
+name: dataset
+profile: '{"num_rows": 1975, "num_elements": 9875}'
+schema: '{"mlflow_colspec": [{"type": "integer", "name": "complaint_type", "required":
+  true}, {"type": "integer", "name": "borough", "required": true}, {"type": "integer",
+  "name": "agency", "required": true}, {"type": "integer", "name": "incident_zip",
+  "required": true}, {"type": "long", "name": "resolution_time", "required": true}]}'
+source: '{"tags": {"mlflow.user": "Bjorn", "mlflow.source.name": "c:/z2005/311_project/311_predictions/train_test_monitor.py",
+  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "8843d3d0ebf187f05604336673d5811261783efa"}}'
+source_type: code

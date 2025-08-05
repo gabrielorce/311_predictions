@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/z2005/311_project/311_predictions/mlruns/356300005612771053/792b73a7522a4beabe9922a96f23921d/artifacts
+end_time: 1754368657691
+entry_point_name: ''
+experiment_id: '356300005612771053'
+lifecycle_stage: active
+run_id: 792b73a7522a4beabe9922a96f23921d
+run_name: awesome-wasp-386
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754368657630
+status: 4
+tags: []
+user_id: Bjorn

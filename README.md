@@ -19,3 +19,26 @@ The evidently report can be found in the same location as the python script; MLF
 A dockerfile is also available for use.
 
 This project currently lacks proper structure due to lack of time in completion. The train_test_monitor.py will present most output (evidentlyAI report, MLFlow registry)
+
+
+USAGE:
+
+This information is in the NYC 311 data page. It can also be retrieved via API.
+
+To make a prediction you can use curl once you have this information:
+
+curl -X POST http://localhost:8000/predict \
+    -H "Content-Type: application/json" \
+    -d '{"Complaint Type": 1, "Borough": 2, "Zip Code": 10001, "Agency": 3, "Created Hour": 14, "Created Weekday": 2}'
+
+
+To build the image:
+docker build -t xgboost-311-api .
+
+to execute the container:
+docker run -p 8000:8000 xgboost-311-api
+
+to retrieve a prediction:
+curl -X POST http://localhost:8000/predict \
+    -H "Content-Type: application/json" \
+    -d '{"complaint_type": 1, "borough": 2, "agency": 3, "incident_zip": 10001}'

@@ -41,23 +41,33 @@ def download_data():
 # Step 2: Preprocess Data
 # ================================
 def preprocess():
-    df = pd.read_csv(DATA_FILE)
-    df = df.dropna(subset=["latitude", "longitude", "created_date"])
+    df = pd.read_csv(DATA_FILE, parse_dates=['created_date', 'closed_date'], low_memory=False)
+
+    features = ['complaint_type', 'borough', 'agency', 'incident_zip', 'created_date', 'closed_date']
+    target = "resolved_within_7days"
 
     # Basic feature engineering
     df["created_date"] = pd.to_datetime(df["created_date"])
-    df["hour"] = df["created_date"].dt.hour
-    df["dayofweek"] = df["created_date"].dt.dayofweek
+    df["created_hour"] = df["created_date"].dt.hour
+    df["created_weekday"] = df["created_date"].dt.dayofweek
+    
+    # Target: resolved_within_7days
+    df = df.dropna(subset=['created_date', 'closed_date'])
+    df['resolution_time'] = (df['closed_date'] - df['created_date']).dt.days
+    df['resolved_within_7days'] = (df['resolution_time'] <= 7).astype(int)
 
-    # Target: response time in hours (if available)
-    df["closed_date"] = pd.to_datetime(df["closed_date"], errors='coerce')
-    df["response_time"] = (df["closed_date"] - df["created_date"]).dt.total_seconds() / 3600.0
-    df = df.dropna(subset=["response_time"])
+#    df = df.dropna(subset=features)
+    df = df[features + ['resolution_time'] + ['resolved_within_7days']].dropna()
 
-    features = ["latitude", "longitude", "hour", "dayofweek"]
-    target = "response_time"
+    # Drop original date to prevent leakage
+#    df = df.drop(columns=['created_date'])
 
-    X = df[features]
+    # Encode categoricals
+    for col in ['complaint_type', 'borough', 'agency', 'incident_zip']: # 'Zip Code']:
+        df[col] = df[col].astype('category').cat.codes
+
+    processed_features = ['complaint_type', 'borough', 'agency', 'incident_zip']
+    X = df[processed_features]
     y = df[target]
 
     return train_test_split(X, y, test_size=0.2, random_state=42)

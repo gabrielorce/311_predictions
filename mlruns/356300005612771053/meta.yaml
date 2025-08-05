@@ -1,0 +1,6 @@
+artifact_location: file:///C:/z2005/311_project/311_predictions/mlruns/356300005612771053
+creation_time: 1754368656783
+experiment_id: '356300005612771053'
+last_update_time: 1754368656783
+lifecycle_stage: active
+name: NYC311_XGBoost

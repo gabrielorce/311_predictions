@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/z2005/311_project/311_predictions/mlruns/356300005612771053/2c13ad18e1d04b7f9abcadd38159dfb6/artifacts
+end_time: 1754369010874
+entry_point_name: ''
+experiment_id: '356300005612771053'
+lifecycle_stage: active
+run_id: 2c13ad18e1d04b7f9abcadd38159dfb6
+run_name: polite-shoat-95
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754369001987
+status: 3
+tags: []
+user_id: Bjorn

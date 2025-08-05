@@ -1,0 +1,10 @@
+artifact_location: file:///C:/z2005/311_project/311_predictions/mlruns/356300005612771053/models/m-973740f139ae46f4acc6a1807ff8dbc0/artifacts
+creation_timestamp: 1754369037007
+experiment_id: '356300005612771053'
+last_updated_timestamp: 1754369044442
+model_id: m-973740f139ae46f4acc6a1807ff8dbc0
+model_type: null
+name: model
+source_run_id: 1ffde30051b9447fa030878cd849cdd9
+status: 2
+status_message: null

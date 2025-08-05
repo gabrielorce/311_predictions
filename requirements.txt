@@ -3,7 +3,4 @@ uvicorn
 xgboost
 pandas
 joblib
-mlflow
-shap
 scikit-learn
-evidently
