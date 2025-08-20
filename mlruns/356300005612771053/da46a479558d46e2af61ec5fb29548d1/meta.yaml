@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/z2005/311_project/311_predictions/mlruns/356300005612771053/da46a479558d46e2af61ec5fb29548d1/artifacts
+end_time: 1755576951497
+entry_point_name: ''
+experiment_id: '356300005612771053'
+lifecycle_stage: active
+run_id: da46a479558d46e2af61ec5fb29548d1
+run_name: gaudy-roo-960
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755576944235
+status: 3
+tags: []
+user_id: Bjorn

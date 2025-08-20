@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/z2005/311_project/311_predictions/mlruns/356300005612771053/def113d9830543acb4e47ea1b64f5b0e/artifacts
+end_time: 1755576792419
+entry_point_name: ''
+experiment_id: '356300005612771053'
+lifecycle_stage: active
+run_id: def113d9830543acb4e47ea1b64f5b0e
+run_name: crawling-sheep-976
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755576783762
+status: 3
+tags: []
+user_id: Bjorn

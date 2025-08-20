@@ -5,6 +5,7 @@ import pandas as pd
 import mlflow
 import mlflow.xgboost
 import xgboost as xgb
+import joblib
 from evidently import Report
 from evidently.presets import DataDriftPreset, DataSummaryPreset 
 from sklearn.model_selection import train_test_split
@@ -63,8 +64,15 @@ def preprocess():
 #    df = df.drop(columns=['created_date'])
 
     # Encode categoricals
+
+    encoders = {}   # 
     for col in ['complaint_type', 'borough', 'agency', 'incident_zip']: # 'Zip Code']:
-        df[col] = df[col].astype('category').cat.codes
+        df[col] = df[col].astype('category')
+        encoders[col] = df[col].cat.categories  # store categories
+        df[col] = df[col].cat.codes
+
+    # Save encoders to disk, since you will need to apply thm when you call the model with the raw categories.
+    joblib.dump(encoders, "encoders.pkl")
 
     processed_features = ['complaint_type', 'borough', 'agency', 'incident_zip']
     X = df[processed_features]
