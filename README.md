@@ -3,7 +3,7 @@
 This is the description of the capstone project for the DatataDataTalks.Club MLOps-Zoomcamp course.  
 
 
-This project is the model creation of a prediction model from the NYC 311 data to predict the probability tahat a complaint will be resolved within 7 days. For this the chosen alorithm is XGBoost.  
+This project is the model creation of a prediction model from the NYC 311 data to predict the probability that a complaint will be resolved within 7 days. For this the chosen algorithm is XGBoost.  
 
 It highlights the usage of MLFlow for model storage as well as EvidentlyAI for monitoring.  
 
