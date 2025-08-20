@@ -7,3 +7,4 @@ mlflow
 shap
 scikit-learn
 evidently
+prometheus_client
