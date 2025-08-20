@@ -58,6 +58,16 @@ via API:
 [http://localhost:5000/](http://localhost:8080/predict)  -  PREDICTION MODEL 
 
 
+Also, file export_metrics.py exposes these metrics and loads them into prometheus:  
+```
+PSI (psi_complaint_type)
+ROC AUC (roc_auc_metric)
+```  
+
+which you can view in:  
+http://localhost:9100/metrics  
+
+
 To make a prediction you can use curl once you have the feature information from table provided on the website. Below is an example:
 
 ```
