@@ -62,7 +62,13 @@ Also, file export_metrics.py exposes these metrics and loads them into prometheu
 ```
 PSI (psi_complaint_type)
 ROC AUC (roc_auc_metric)
-```  
+```
+
+Be sure to install the prometheus_client before using it:   
+```   
+pip install prometheus_client  
+python export_metrics.py  
+```   
 
 which you can view in:  
 http://localhost:9100/metrics  
