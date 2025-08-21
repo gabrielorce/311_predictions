@@ -74,15 +74,6 @@ which you can view in:
 http://localhost:9100/metrics  
 
 
-To make a prediction you can use curl once you have the feature information from table provided on the website. Below is an example:
-
-```
- curl -X POST http://localhost:8000/predict \
-    -H "Content-Type: application/json" \
-    -d '{"complaint_type": "Noise - Street/Sidewalk", "borough": "BRONX", "agency": "NYPD", "incident_zip": 10452} 
-```
-
-
 
 
 NOTE: Unfortunately, this project currently lacks proper structure due to lack of time in completion. 
