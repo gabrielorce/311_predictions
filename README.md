@@ -3,7 +3,7 @@
 This is the description of the capstone project for the DatataDataTalks.Club MLOps-Zoomcamp course.  
 
 
-This project is the model creation of a prediction model from the NYC 311 data to predict the probability tahat a complaint will be resolved within 7 days. For this the chosen alorithm is XGBoost.  
+This project is the model creation of a prediction model from the NYC 311 data to predict the probability that a complaint will be resolved within 7 days. For this the chosen algorithm is XGBoost.  
 
 It highlights the usage of MLFlow for model storage as well as EvidentlyAI for monitoring.  
 
@@ -56,6 +56,22 @@ Via Web:
 
 via API:   
 [http://localhost:5000/](http://localhost:8080/predict)  -  PREDICTION MODEL 
+
+
+Also, file export_metrics.py exposes these metrics and loads them into prometheus:  
+```
+PSI (psi_complaint_type)
+ROC AUC (roc_auc_metric)
+```
+
+Be sure to install the prometheus_client before using it:   
+```   
+pip install prometheus_client  
+python export_metrics.py  
+```   
+
+which you can view in:  
+http://localhost:9100/metrics  
 
 
 To make a prediction you can use curl once you have the feature information from table provided on the website. Below is an example:
